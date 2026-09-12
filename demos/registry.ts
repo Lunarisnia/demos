@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import { LissajousDemo } from "./lissajous/demo";
 import { VectorProjectionDemo } from "./vector-projection/demo";
+import { CrossProductDemo } from "./cross-product/demo";
 
 export type DemoCategory = "Mathematics" | "Computer graphics" | "Simulation";
 
@@ -16,6 +17,16 @@ export type Demo = {
 };
 
 export const demos: Demo[] = [
+  {
+    slug: "cross-product",
+    title: "Cross Product",
+    description: "Construct a vector perpendicular to two directions and connect its magnitude to the area between them.",
+    category: "Mathematics",
+    technology: "Interactive SVG",
+    glyph: "×",
+    accent: "blue",
+    component: CrossProductDemo,
+  },
   {
     slug: "vector-projection",
     title: "Vector Projection",
