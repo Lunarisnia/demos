@@ -2,6 +2,7 @@ import type { ComponentType } from "react";
 import { LissajousDemo } from "./lissajous/demo";
 import { VectorProjectionDemo } from "./vector-projection/demo";
 import { CrossProductDemo } from "./cross-product/demo";
+import { MatrixMultiplicationDemo } from "./matrix-multiplication/demo";
 
 export type DemoCategory = "Mathematics" | "Computer graphics" | "Simulation";
 
@@ -17,6 +18,16 @@ export type Demo = {
 };
 
 export const demos: Demo[] = [
+  {
+    slug: "matrix-multiplication",
+    title: "Matrix Multiplication",
+    description: "Watch rows meet columns and see how each dot product fills one cell of the resulting matrix.",
+    category: "Mathematics",
+    technology: "Interactive DOM",
+    glyph: "[×]",
+    accent: "orange",
+    component: MatrixMultiplicationDemo,
+  },
   {
     slug: "cross-product",
     title: "Cross Product",
